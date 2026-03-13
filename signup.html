@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <ul>
+        <li id="logo">
+            <img src="icons/Nexus logo.webp" alt="Nexus Flow Logo">
+            <span>Nexus Flow</span>
+        </li>
+        </ul>
+        <div class="container">
+            <div class="signup-text">
+                <h1>Welcome </h1>
+                <p class="sub">input your details</p>
+                <button>login</button> <button>signup</button>
+            </div>
+            <div class="form-container">
+                <form class="signup-form" action="store.php" method="post">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="nexus@gmail.com">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm password">
+                    <button type="submit">Sign Up</button>
+                </form>
+                <form class="login-form" action="login.php" method="post">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="nexus@gmail.com">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="style image">
+                NEXUS FLOW
+            </div>
+
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
