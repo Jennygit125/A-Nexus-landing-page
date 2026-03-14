@@ -158,7 +158,8 @@ footer{
 }
 .content{
     background-color: #ffffff;
-    width: 30%;
+    width: max-content;
+    padding: 1rem;
     align-content: center;
     text-align: center;
     place-items: center;
@@ -166,10 +167,20 @@ footer{
     border: solid 1px #16243b;
     border-radius: 4%;
     box-shadow: 10px 10px 8px #888888;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 
+}
+button{
+    background-color: #3882F6;
+    border: solid 2px #14bff3;
+    border-radius: 15%;
+    box-shadow: 3px 4px 2px #888888d3;
+}
+.form-container{
+    padding: 1rem;
+    border-left: solid 1px #1f2937;
 }
 label, input {
   display: block;
