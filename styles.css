@@ -7,8 +7,9 @@ body{
     align-items: center;
 }
 ul{
-    background-color: #1f2937;
-    color: white;
+    background-color: #1cdae7;
+    opacity: 0.9;
+    color: rgb(16, 30, 77);
     display: inline-flex;
     list-style: none;
     box-sizing: border-box;
@@ -18,13 +19,11 @@ ul{
     font-size: small;
     font-weight: 20;
     align-items: end;
-    padding: 10px;
-    border-radius: 0px;
-    width:100%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
+    padding: 1rem;
+    width:100vw;
+    min-width: 100vw;
+    position: fixed;
+    overflow: hidden;
 }
 #logo{
     font-size: 20px;
@@ -57,10 +56,6 @@ div{
     height: auto;
     border-radius: 2%;
     margin:2%;
-    -webkit-border-radius: 2%;
-    -moz-border-radius: 2%;
-    -ms-border-radius: 2%;
-    -o-border-radius: 2%;
 }
 .heading_text{
     flex: 1;
@@ -71,11 +66,14 @@ div{
     color: white;
     border-radius: 10px;
     border: none;
+    box-shadow: 10px 10px 5px rgb(25, 148, 206);
     padding: 1% 2%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin: 1%;
+
 }
 .image-container{
     padding: 2%;
@@ -136,6 +134,7 @@ div{
     border: 2px solid white;
     border-radius: 8px;
     padding: 1% 2%;
+    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     float: right;
@@ -152,25 +151,33 @@ footer{
 .container{
     margin: auto;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     place-items: center;
     display: grid;
 }
 .content{
     background-color: #ffffff;
-    width: max-content;
+    background-image: url(wood.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height:50%;
+    max-width: 90vw;
+    max-height: 80vh;
     padding: 1rem;
     align-content: center;
     text-align: center;
     place-items: center;
     margin-top: 2%;
     border: solid 1px #16243b;
-    border-radius: 4%;
+    border-radius: 3%;
     box-shadow: 10px 10px 8px #888888;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flexbox;
     gap: 1rem;
-
+    font-size: 0.9rem;
 }
 button{
     background-color: #3882F6;
@@ -180,7 +187,6 @@ button{
 }
 .form-container{
     padding: 1rem;
-    border-left: solid 1px #1f2937;
 }
 label, input {
   display: block;
@@ -188,5 +194,30 @@ label, input {
 
 input {
   margin-bottom: 1rem;
+
+}
+.login-form{
+    display: none;
+}
+input{
+    width: 100%;
+    background: rgba(24, 4, 4, 0.05);
+    color: var(--white);
+    padding: 0.4rem;
+    border: 1px solid rgba(6, 28, 153, 0.3);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.15);
+}
+.container{
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
