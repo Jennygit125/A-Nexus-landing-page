@@ -9,39 +9,42 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <nav>
       <ul>
         <li id="logo">
             <img src="icons/Nexus logo.webp" alt="Nexus Flow Logo">
             <span>Nexus Flow</span>
         </li>
         </ul>
+    </nav>
         <div class="container">
             <div class="content">
 
            
-            <div class="form-container">
-                <form class="signup-form" action="store.php" method="post">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="nexus@gmail.com">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="password">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="confirm password">
-                    <button type="submit">Sign Up</button>
-                </form>
-                <form class="login-form" action="login.php" method="post">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="nexus@gmail.com">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="password">
-                    <button type="submit">Login</button>
-                </form>
+            <div id="form-container">
+  <form id="login-form">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="#" id="to-signup">Sign up</a></p>
+  </form>
+
+  <form id="signup-form" style="display: none;">
+    <h2>Create Account</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="#" id="to-login">Login</a></p>
+  </form>
+</div>
                 <div class="bottom text">
                     NEXUS FLOW
                 </div>
             </div>
         </div>
         </div>
-        <script src="" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>

@@ -1,8 +1,16 @@
+const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+const toSignup = document.getElementById('to-signup');
+const toLogin = document.getElementById('to-login');
 
-const button = document.getElementsByClassName("first_Button");
+toSignup.addEventListener('click', (e) => {
+  e.preventDefault();
+  loginForm.style.display = 'none';
+  signupForm.style.display = 'block';
+});
 
-function handleClick() {
-  window.location.href = "signup.html"
-}
-
-button.addEventListener("click", handleClick);
+toLogin.addEventListener('click', (e) => {
+  e.preventDefault();
+  signupForm.style.display = 'none';
+  loginForm.style.display = 'block';
+});
